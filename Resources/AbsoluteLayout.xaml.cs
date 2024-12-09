@@ -2,8 +2,12 @@ namespace UsoDeLayouts.Resources;
 
 public partial class AbsoluteLayout : ContentPage
 {
-	public AbsoluteLayout()
-	{
-		InitializeComponent();
-	}
+    public AbsoluteLayout()
+    {
+        InitializeComponent();
+    }
+    private async void GridLayoutButton_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new GridlayoutPage());
+    }
 }

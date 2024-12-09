@@ -5,11 +5,10 @@
         public App()
         {
             InitializeComponent();
+
+            MainPage = NavigationPage(new FlexLayout());
+
         }
 
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
-            return new Window(new AppShell());
-        }
     }
 }
