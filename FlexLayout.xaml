@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UsoDeLayouts.FlexLayout"
+             Title="FlexLayout">
+    <FlexLayout
+        Direction="Column"
+        AlignItems="Stretch"
+        JustifyContent="SpaceBetween">
+
+
+        <Label Text=""
+               FontSize="18"
+               BackgroundColor="Violet"
+               HorizontalTextAlignment="Center"
+               ></Label>
+
+        <HorizontalStackLayout Spacing="20" >
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight"/>
+            <Button  
+                x:Name="AbsoluteButton1"
+                Text="Hacer"
+                Clicked="AbsoluteButton1_Clicked">
+
+            </Button>
+            <Button  
+                x:Name="AbsoluteButton2"
+                Text="Click"
+                Clicked="AbsoluteButton2_Clicked">
+                
+            </Button>
+            <Button  
+                x:Name="AbsoluteButton3"
+                Text="Aqui"
+                Clicked="AbsoluteButton3_Clicked">
+                
+            </Button>
+            <Button  
+                x:Name="AbsoluteButton4"
+                Text="Para ir a AbsoluteLayuot"
+                Clicked="AbsoluteButton4_Clicked">
+                
+            </Button>
+            </HorizontalStackLayout>
+
+            <Label Text=""
+               FontSize="18"
+               BackgroundColor="MediumPurple"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="End"/>
+
+    </FlexLayout>
+</ContentPage>
